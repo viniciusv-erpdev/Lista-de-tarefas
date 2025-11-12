@@ -13,4 +13,4 @@ class Tarefa(models.Model):
     status_tarefa = models.CharField(max_length=1, choices=STATUS_TAREFA, default='N')
     
     def __str__(self):
-        return self.tarefa_text
+        return self.titulo

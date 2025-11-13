@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+{% if lista_de_tarefas %}
+    <ul>
+    {% for tarefa in lista_de_tarefas %}
+        <li><a href="/tarefa/{{ tarefa.id }}/">{{ tarefa.descricao }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No tasks are available.</p>
+{% endif %}
+</body>
+</html>

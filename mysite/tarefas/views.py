@@ -4,7 +4,6 @@ from django.http import JsonResponse
 from django.template import loader
 from .models import Tarefa
 
-# Create your views here.
 def index(request):
     return HttpResponse("Hello, world. You´re at tasks index!")
 

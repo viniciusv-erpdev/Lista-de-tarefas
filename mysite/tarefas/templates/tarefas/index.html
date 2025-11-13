@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="{% static 'tarefas/style.css' %}">
 </head>
 <body>
-{% if lista_de_tarefas %}
-    <ul>
-    {% for tarefa in lista_de_tarefas %}
-        <li><a href="/tarefa/{{ tarefa.id }}/">{{ tarefa.descricao }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No tasks are available.</p>
-{% endif %}
+    <div class="card-principal">
+        <p>Eu sou uma página!</p>
+    </div>
 </body>
 </html>

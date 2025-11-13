@@ -1,0 +1,15 @@
+===Linux===
+
+criar:
+python3 -m venv venv
+
+ativar:
+source venv/bin/activate
+
+===Windows===
+
+criar:
+python -m venv venv
+
+ativando no windows:
+venv\Scripts\activate
